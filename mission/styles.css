@@ -51,3 +51,11 @@ footer img {
 .dark h2 {
     color: #A0D4ED
 }
+.dark header,
+.dark main,
+.dark footer {
+    background-color: #444;
+}
+.dark img {
+    filter: invert(100%);
+}
