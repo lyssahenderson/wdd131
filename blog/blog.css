@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif; 
+    background-color: #F5F5F5; 
+    color: #473144; 
+    line-height: 1.6; 
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif; 
+    color: #AF1B3F; 
+}
+
+h1 {
+    font-size: 3rem; 
+    text-align: center; 
+    color: #473144; 
+    padding: 20px 0; 
+    margin: 0; 
+}
+
+h2 {
+    font-size: 2rem; 
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+}
+
+a {
+    color: #AF1B3F; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+article {
+    background-color: white; 
+    border: 1px solid #EFC69B; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #473144; 
+    color: white; 
+    margin-top: 20px;
+}
+
+nav {
+    border-top: 1px solid #EFC69B;
+    border-bottom: 1px solid #EFC69B; 
+    padding: 10px 0; 
+}
+
+nav ul {
+    max-width: 600px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    justify-content: center; 
+    line-height: 2.5; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    font-size: 1.2rem; 
+    color: #AF1B3F; 
+    text-decoration: none; 
+    padding: 5px 15px; 
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.filters {
+    background-color: #F5F5F5; 
+    padding: 20px;
+    border: 1px solid #EFC69B; 
+    border-radius: 5px;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 20px; 
+    padding: 20px;
+    background-color: white; 
+    border: 1px solid #EFC69B; 
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.book .details {
+    font-size: 0.9rem; 
+    color: #473144; 
+}
+
+.book .content h2 {
+    font-size: 1.5rem;
+    color: #AF1B3F; 
+}
+
+.book .content img {
+    max-width: 100%; 
+    border: 2px solid #EFC69B; 
+    margin-top: 10px;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px; 
+    left: 0;
+    background-color: #EFC69B; 
+    color: #473144; 
+    padding: 10px;
+    z-index: 100; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: top 0.3s; 
+}
+
+.skiptocontent a:focus {
+    top: 0; 
+}
