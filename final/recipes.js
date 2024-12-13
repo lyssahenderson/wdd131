@@ -1,4 +1,4 @@
-const recipes = [
+export const recipes = [
     {
         name: 'Cranberry Orange Cookies',
         image: 'images/cranberry-orange-cookies.webp',

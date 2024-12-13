@@ -1,5 +1,6 @@
-import { recipes } from './recipes.js';
+import { recipes } from './recipes.js'; // Correct import
 
+// Get references to HTML elements
 const recipesContainer = document.getElementById('recipes-container');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
@@ -47,7 +48,7 @@ searchButton.addEventListener('click', () => {
     filterRecipes(query);
 });
 
-// Optional: Add 'Enter' key functionality
+// Add 'Enter' key functionality
 searchInput.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
         const query = searchInput.value.trim();

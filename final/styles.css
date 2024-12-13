@@ -122,7 +122,7 @@ nav a {
 }
 nav a:link,
 nav a:visited {
-  color: var(--nav-link-color);
+  color: white;
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
@@ -196,13 +196,77 @@ nav a:hover {
 .search-bar button {
     padding: 0.5em 1em;
     font-size: 1em;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
-    border: none;
+    border: 2px solid var(--secondary-color);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .search-bar button:hover {
     background-color: var(--secondary-color);
+}
+
+.recipe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  background: #f9f9f9;
+}
+
+.recipe img {
+  width: 100%; /* Matches the width of the container */
+  height: 200px; /* Ensures uniform height */
+  object-fit: cover; /* Keeps aspect ratio while filling the space */
+  border-radius: 5px; /* Optional: for rounded edges */
+}
+
+
+.recipe h2, .recipe h3 {
+  color: #333;
+}
+
+.recipe ul, .recipe ol {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.recipe ul li, .recipe ol li {
+  line-height: 1.5;
+}
+
+.recipe-card {
+  width: 300px; /* Adjust to a more spacious size */
+  min-height: 400px; /* Ensures enough vertical space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px; /* Space between elements */
+  padding: 20px; /* Add padding inside the card */
+  margin: 20px; /* Space between cards */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Rounded edges */
+  background-color: #fdfdfd; /* Light background for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better definition */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Ensure text is aligned */
+  padding: 20px; /* Add space inside the footer */
+  margin-top: 30px; /* Space above the footer */
+  background-color: var(--secondary-color); /* Add a background color */
+  color: var(--paragraph-color-on-color); /* Ensure readable text color */
+  border-radius: 10px; /* Optional: Round the edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  max-width: 1200px; /* Optional: Limit footer width */
+  margin: 30px auto; /* Center footer horizontally */
 }
